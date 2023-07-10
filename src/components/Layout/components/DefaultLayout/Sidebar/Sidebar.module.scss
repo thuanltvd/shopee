@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    // width: 250px;
+    height: 580px;
+    margin: 8px;
+    padding: 4px 8px;
+}
+.span {
+    height: 30px;
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--text-color);
+    }
+.items {
+    margin: 8px;
+    align-items: center;
+}
+
+.item {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 8px 8px 8px;
+    // padding: 4px 8px;
+}

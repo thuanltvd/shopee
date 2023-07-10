@@ -1,0 +1,137 @@
+.wrapper {
+  --search-border-radius: 92px;
+  --search-height: 46px;
+  --search-top-spacer: 9px;
+  --search-button-width: 800px;
+
+  width: 100%;
+  height: var(--default-layout-header-height);
+  box-shadow: 0 1px 1px rbg(0, 0, 0 / 12%);
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 8px 8px 8px 0;
+}
+// .inner {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   margin: 10px;
+//   background-color: bisque;
+// }
+.inner__top {
+  height: 64px;
+  width: var(--default-layout-width);
+  background-color: rgb(250, 244, 244);
+  display: flex;
+  align-items: center;
+  margin: 8px 8px 0 8px;
+}
+
+.inner__bottom {
+  // height: 24px;
+  // background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  margin:0;
+  margin-left: -46%;
+  align-items: center;
+
+  .list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.logo {
+  float: left;
+  margin: auto 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 700;
+  font: optional;
+}
+
+.search,
+.search-result {
+  width: 361px;
+}
+
+.search {
+  width: 50%;
+  position: relative;
+  height: var(--search-height);
+  display: flex;
+  float: center;
+  margin: 12px auto;
+  padding-left: 16px;
+  padding: 0 4px;
+  border: 1px solid rgb(57, 57, 61);
+  border-radius: var(--search-border-radius);
+  background-color: rgba(22, 24, 35, 0.06);
+  align-items: center;
+}
+
+.search__icon {
+}
+
+.search__input {
+  padding-left: 16px;
+  flex: 1;
+  height: 100%;
+  width: var(--search-button-width);
+  color: var(--black);
+  font-size: 1.6rem;
+  //   caret-color: var(--primary);
+  background-color: transparent;
+}
+.search__button {
+  height: 100%;
+  color: var(--black);
+  font-size: 1.6rem;
+  caret-color: var(--primary);
+  border-radius: var(--search-border-radius);
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(71, 93, 84, 0.794);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    padding-left: 0px;
+    width: 1px;
+    height: 28px;
+    top: 9px;
+    right: 95px;
+    background-color: rgba(98, 97, 97, 0.794);
+  }
+}
+
+.search-result {
+  padding-bottom: 8px;
+}
+
+
+
+.actions {
+  display: flex;
+  float: right;
+  justify-content: center;
+  margin: 0 12px;
+  padding: 12px 12px;
+}
+
+.login {
+  padding-left: 4px;
+}
+.action__login {
+  padding: 0 12px;
+}
+
+.action__cart {
+  width: 36px;
+  text-decoration-color: var(--primary);
+}
