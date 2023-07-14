@@ -2,6 +2,7 @@ import styles from './Home.module.scss';
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLessThan, faGreaterThan } from '@fortawesome/free-solid-svg-icons';
+import ListContent from '~/components/Data/ListContent';
 
 const cx = classNames.bind(styles);
 
@@ -33,17 +34,22 @@ function Home() {
         },
     ];
     return (
-        <div className={cx('home')}>
-            <h4 className= {cx('title')}>san pham noi bat</h4>
-            <FontAwesomeIcon icon={faLessThan} className={cx('icon', 'left')} />
-            {images.map((image) => (
-                <div key={image} className={cx('inner')}>
-                    <a href={image.href} className={cx('link')}>
-                        {image.img}
-                    </a>
-                </div>
-            ))}
-            <FontAwesomeIcon icon={faGreaterThan} className={cx('icon', 'icon__right')} />
+        <div>
+            {/* <h4 className={cx('title')}>San pham noi bat</h4>
+            <div className={cx('home')}>
+                <FontAwesomeIcon icon={faLessThan} className={cx('icon', 'left')} />
+                {images.map((image) => (
+                    <div key={image} className={cx('inner')}>
+                        <a href={image.href} className={cx('link')}>
+                            {image.img}
+                        </a>
+                    </div>
+                ))}
+                <FontAwesomeIcon icon={faGreaterThan} className={cx('icon', 'icon__right')} />
+            </div> */}
+            <div>
+                <ListContent/>
+            </div>
         </div>
     );
 }

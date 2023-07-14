@@ -6,6 +6,13 @@
 
 }
 
+.title {
+    margin: 10px;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 .inner {
     width: 250px;
     display: flex;
@@ -43,7 +50,7 @@ img {
     z-index: 1;
     cursor: pointer;
     position: absolute;   
-    top: 40%;
+    top: 48%;
     opacity: 0.3;
     z-index: 1
 }
@@ -51,4 +58,8 @@ img {
 .icon__right {
     // margin-top: 100px;
     margin-left: var(--dafault-layout-width-content);
+}
+
+.icons + .icons {
+    margin-top: 50px;
 }
